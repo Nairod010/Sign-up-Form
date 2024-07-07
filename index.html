@@ -1,12 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title></title>
-        <link href="css/style.css" rel="stylesheet">
-    </head>
-    <body>
-    
-    </body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sign-up Form</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="left-container">
+            <img class="mojito" src="images/mojito.jpg" alt="mojito">
+            <div class="logo">
+                <img id="logo" src="images/logo.png" alt="logo">
+                <span class="logo-text">Mojito Club</span>
+            </div>
+        </div>
+        <div class="right-container">
+            <div class="description">
+                <h1>Welcome to the mojito club</h1>
+            </div>
+            <div class="filling">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet laborum harum atque perferendis
+                    doloremque ratione dolorum ducimus adipisci architecto officiis ipsa nihil quasi, repellendus
+                    quibusdam assumenda sint a recusandae cumque.</p>
+            </div>
+            <div class="form-container">
+                <form action="#" class="form">
+                    <div class="legend-inputs">
+                        <legend>Fill in the form below to join the club.</legend>
+                        <div class="inputs-container">
+                            <div class="form-row">
+                                <label for="first-name">First Name:</label>
+                                <input id="first-name" type="text" placeholder="First Name..." required>
+                            </div>
+                            <div class="form-row">
+                                <label for="last-name">Last Name:</label>
+                                <input id="last-name" type="text" placeholder="Last Name..." required>
+                            </div>
+                            <div class="form-row">
+                                <label for="email">Email:</label>
+                                <input id="email" type="email" placeholder="Email..." required>
+                            </div>
+                            <div class="form-row">
+                                <label for="phone">Phone Number:</label>
+                                <input id="phone" type="tel" placeholder="Phone Number..." pattern="^(?=.*[0-9]).{10}$"
+                                    required>
+                            </div>
+                            <div class="form-row">
+                                <label for="password">Password:</label>
+                                <input type="password" id="password" placeholder=" "
+                                    pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}$" required>
+                            </div>
+                            <div class="form-row">
+                                <label for="password">Confirm Password:</label>
+                                <input id="password" type="password" placeholder=" "
+                                    pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}$" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="log-in">
+                        <button class="submit" type="submit">Create Account</button>
+                        <spam id="quote">Already have an account? <a href="index.html">Log in</a></spam>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer">
+            <p>Part of the Odin Project runthrough. Check my <a
+                    href="https://github.com/Nairod010/Sign-up-Form">github.</a></p>
+        </div>
+    </footer>
+</body>
+
 </html>
