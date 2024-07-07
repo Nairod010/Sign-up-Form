@@ -159,13 +159,25 @@ input:invalid:not(:focus):not(:placeholder-shown) {
     display: flex;
     position: absolute;
     bottom: 1%;
-    left: 3%;
+    left: 10%;
     padding: 1px;
     color: white;
     font-size: 15px;
-    opacity: 50%;
+    opacity: 90%;
     flex: 1;
 }
+
+.under-footer{
+    display: flex;
+    position: absolute;
+    bottom: 50%;
+    left: 20%;
+    padding: 1px;
+    color: white;
+    font-size: 15px;
+    flex: 1;
+}
+
 
 a {
     text-decoration: none;
